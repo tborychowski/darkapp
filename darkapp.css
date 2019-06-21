@@ -1,0 +1,123 @@
+:root {
+	--bg-dark0: #2e3440;
+	--bg-dark1: #3b4252;
+	--bg-dark2: #434c5e;
+	--bg-dark3: #4c566a;
+
+	--bg-light0: #d8dee9;
+	--bg-light1: #e5e9f0;
+	--bg-light2: #eceff4;
+
+	--text-dark0: #2e3440;
+	--text-dark1: #3b4252;
+	--text-dark2: #434c5e;
+	--text-dark3: #4c566a;
+
+	--text-light0: #d8dee9;
+	--text-light1: #e5e9f0;
+	--text-light2: #eceff4;
+	--text-light3: #eceff488;
+
+	--link0: #8fbcbb;
+	--link1: #88c0d0;
+	--link2: #81a1c1;
+	--link3: #5e81ac;
+
+	--highlight: #4c566a;
+	--accent: #d08770;
+	--accent-alt: #b48ead;
+
+	--info: #5e81ac;
+	--danger: #bf616a;
+	--warning: #ebcb8b;
+	--success: #a3be8c;
+}
+
+#startup { background: var(--bg-dark0) !important; }
+body.web { -webkit-app-region: drag; background: var(--bg-dark0); }
+#app .app { position: absolute; top: 0; bottom: 0; right: 0; left: 0; width: 100%; height: 100%; min-width: 0; }
+
+
+
+/* sidebar */
+#side header { background: var(--bg-dark0); -webkit-app-region: drag; }
+#side svg path { fill: var(--text-light2); }
+#side header>div:first-child { max-width: 40px; margin: auto; }
+
+
+/* popup menu */
+#side header div span div span div { background: var(--bg-dark0); }
+#side ul li [role=button] { color: var(--text-light2); }
+#side ul li:hover [role=button] { background: var(--bg-dark3); }  /* menu items hover */
+
+#app span>div { background: var(--bg-dark0); }
+#app span>div>ul>li [role=button] { color: var(--text-light2); }
+#app span>div>ul>li:hover { background: var(--bg-dark3); }  /* menu items hover */
+
+
+/* contacts list */
+#pane-side,
+#pane-side>div>div>div>div>div>div>div { background: var(--bg-dark0); }
+#pane-side>div>div>div>div>div div::after { display: none; }
+#pane-side>div>div>div>div>div>div>div { border: none !important; }
+#pane-side>div>div>div>div>div>div>div span { color: var(--text-light2); }
+#pane-side>div>div>div>div>div>div div { margin: 0 }	          /* contacts alignment */
+#pane-side>div>div>div>div>div>div:hover div { background: var(--bg-dark3); }
+
+
+
+/* search box */
+#side>div,
+#side>div>div,
+#side>div>div { background: var(--bg-dark0); }
+
+#side div label input,
+#side div label { background: var(--bg-dark2); }
+
+#side div label input { color: var(--text-light2); }
+
+
+
+/* emoji panel */
+#main>footer>div>div>div:nth-child(3)>div>div>div,
+#main>footer>div>div>div:nth-child(3)>div>div>div:nth-child(2)>div { background: var(--bg-dark0); }
+
+
+
+/* main */
+#app .app>div:nth-child(4)>div { background: var(--bg-dark0); }
+#app .app>div:nth-child(4)>div::after { background: none; }
+
+#main>div:nth-child(5) { background: var(--bg-dark0); }
+
+#main header { border: none; -webkit-app-region: drag; }
+#main header span { color: var(--text-light0); }
+
+#main header,
+#main footer>div { background: var(--bg-dark0); }
+
+#main footer>div>div { background: var(--bg-dark0); }
+#main footer>div:first-child>div:nth-child(2) { background: var(--bg-dark3); border: none; }
+#main footer>div:first-child>div [contenteditable] { color: var(--text-light0); }
+
+#main svg path { fill: var(--text-light2); }
+
+#main div label input,
+#main div label { background: var(--bg-dark2); }
+#main div label input { color: var(--text-light2); }
+
+#main .copyable-area div { font-size: 16px; }
+#main .message-in { background: var(--bg-dark3); color: var(--text-light1); }
+#main .message-in .tail-container { display: none; }
+
+#main .message-out { background: var(--bg-dark1); color: var(--text-light1); }
+#main .message-out .tail-container { display: none; }
+
+
+@media only screen and (max-width: 800px) {
+	#side header,
+	#side>div:nth-child(3) { display: none; }
+	#side>div:nth-child(4) { padding-top: 40px; }
+	.app>div:nth-child(3) { flex: none; width: 78px; }
+
+}
