@@ -1,5 +1,5 @@
 # Darkapp
-Just another dark-themed whatsapp-web-client-wrapper in electron, for macos.
+Just another dark-themed whatsapp-web-client wrapped in electron, for macos.
 
 It's far from perfect, use it at your own risk!
 
