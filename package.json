@@ -11,6 +11,7 @@
 	"scripts": {
 		"postinstall": "electron-builder install-app-deps",
 		"start": "gulp",
+		"pack": "electron-builder --dir",
 		"build": "build --mac"
 	},
 	"author": "Tom",
@@ -29,8 +30,8 @@
 		"electron-window-state": "^5.0.3"
 	},
 	"devDependencies": {
-		"electron": "^5.0.4",
-		"electron-builder": "^20.43.0",
+		"electron": "^5.0.5",
+		"electron-builder": "^20.44.4",
 		"gulp": "^4.0.2",
 		"gulp-run-electron": "^3.0.2"
 	}
