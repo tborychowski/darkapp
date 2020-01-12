@@ -83,11 +83,13 @@ body.web { -webkit-app-region: drag; background: var(--bg-dark0); }
 #main div label input { color: var(--text-light2); }
 
 #main .copyable-area div { font-size: 16px; }
-#main .message-in { background: var(--bg-dark3); color: var(--text-light1); }
+#main .message-in { color: var(--text-light1); }
 #main .message-in .tail-container { display: none; }
+#main .message-in div>div>div { background: var(--bg-dark1); color: var(--text-light1); }
 
-#main .message-out { background: var(--bg-dark1); color: var(--text-light1); }
+#main .message-out { color: var(--text-light1); }
 #main .message-out .tail-container { display: none; }
+#main .message-out .tail>div { background: var(--bg-dark1); color: var(--text-light1); }
 
 
 @media only screen and (max-width: 800px) {
